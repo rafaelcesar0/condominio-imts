@@ -1,0 +1,47 @@
+{
+  "apartamentos": [
+    {
+      "id": 1,
+      "bloco": "A",
+      "apartamento": 100,
+      "morador": "Rafael César",
+      "telefone":"85988887777",
+      "email": "",
+      "veiculos": [
+        {
+          "id": 1,
+          "marca": "ferrari",
+          "modelo": "stm297",
+          "cor": "vermelho",
+          "placa": "paz2001"
+        },
+        {
+          "id": 3,
+          "marca": "lamborghini",
+          "modelo": "urus",
+          "cor": "preto",
+          "placa": "paz2003"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "bloco": "A",
+      "apartamento": 101,
+      "morador": "Moisés",
+      "telefone":"85911112222",
+      "email": "",
+      "veiculos": [
+        {
+          "id": 2,
+          "marca": "volkswagen",
+          "modelo": "fusca",
+          "cor": "preto",
+          "placa": "paz2002"
+        }
+      ]
+    }
+  ]
+
+}
+
