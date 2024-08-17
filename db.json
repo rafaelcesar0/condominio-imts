@@ -41,7 +41,12 @@
         }
       ]
     }
+  ], 
+  "usuarios": [
+    {
+      "usuario": "admin",
+      "senha": "admin"
+    }
   ]
 
 }
-
