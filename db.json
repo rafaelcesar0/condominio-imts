@@ -2,10 +2,10 @@
   "apartamentos": [
     {
       "id": 1,
-      "bloco": "A",
+      "bloco": 1,
       "apartamento": 100,
       "morador": "Rafael César",
-      "telefone":"85988887777",
+      "telefone": "85988887777",
       "email": "",
       "veiculos": [
         {
@@ -26,10 +26,10 @@
     },
     {
       "id": 2,
-      "bloco": "A",
+      "bloco": 1,
       "apartamento": 101,
       "morador": "Moisés",
-      "telefone":"85911112222",
+      "telefone": "85911112222",
       "email": "",
       "veiculos": [
         {
@@ -41,12 +41,11 @@
         }
       ]
     }
-  ], 
-  "usuarios": [
+  ],
+  "usuario": [
     {
       "usuario": "admin",
       "senha": "admin"
     }
   ]
-
 }
