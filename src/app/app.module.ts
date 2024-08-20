@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MenubarModule } from 'primeng/menubar';
+import { TableModule } from 'primeng/table';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 
-
-import { ApartamentosComponent } from './components/apartamentos/apartamentos.component';
-import { ApartamentoFormComponent } from './components/apartamento-form/apartamento-form.component';
-import { VeiculosComponent } from './components/veiculos/veiculos.component';
-import { VeiculoFormComponent } from './components/veiculo-form/veiculo-form.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ApartamentosComponent } from './shared/components/apartamentos/apartamentos.component';
+import { ApartamentoFormComponent } from './shared/components/apartamento-form/apartamento-form.component';
+import { VeiculosComponent } from './shared/components/veiculos/veiculos.component';
+import { VeiculoFormComponent } from './shared/components/veiculo-form/veiculo-form.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { TableComponent } from './shared/components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,16 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     VeiculosComponent,
     VeiculoFormComponent,
     NavBarComponent,
+    TableComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MenubarModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MenubarModule,
+    TableModule,
+  ],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

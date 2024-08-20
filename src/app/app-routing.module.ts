@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ApartamentosComponent } from './components/apartamentos/apartamentos.component';
-import { VeiculosComponent } from './components/veiculos/veiculos.component';
-import { VeiculoFormComponent } from './components/veiculo-form/veiculo-form.component';
-import { ApartamentoFormComponent } from './components/apartamento-form/apartamento-form.component';
+import { ApartamentosComponent } from './shared/components/apartamentos/apartamentos.component';
+import { VeiculosComponent } from './shared/components/veiculos/veiculos.component';
+import { VeiculoFormComponent } from './shared/components/veiculo-form/veiculo-form.component';
+import { ApartamentoFormComponent } from './shared/components/apartamento-form/apartamento-form.component';
 
 const routes: Routes = [
   {
@@ -28,6 +28,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
